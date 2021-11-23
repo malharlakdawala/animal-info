@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animalss</title>
+</head>
+<body>
+<ul>
+ALL ANIMALS
+{{animals}}
+ {% for animal in animals %}
+    <br>
+    <li>Leg: {{animal.legs}}</li>
+    <li>Weight: {{animal.weight}}</li>
+    <li>Height: {{animal.height}}</li>
+    <li>ID: {{animal.id}}</li>
+    <li>FamilyID: {{animal.family_id}}</li>
+    <a href="{% url 'family_view' animal.id %}" class="card-link">{{animal.family_id}}</a>
+    {%endfor%}
+    </ul>
+</body>
+</html>

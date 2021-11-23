@@ -1,0 +1,12 @@
+{% block title %}Animal properties of FamilyID{% endblock %}
+{% block content %}
+    <div class="row">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h1 class="card-title">Leg: {{animal.legs}}</h1>
+                    <h6 class="card-subtitle mb-2 text-muted">Weight: {{animal.weight}}</h6>
+                    <p class="card-text">Height: {{ animal.height }}</p>
+                </div>
+            </div>
+    </div>
+{% endblock %}
